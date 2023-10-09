@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temp Converter</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Quicksand&family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero-section">
+      <div class="main">
+        <div class="content">
+          <form id="calTemp" onsubmit="Temp(); return false">
+            <label for="temp"></label>
+            <h2>Temperature Converter</h2>
+            <input
+              type="number"
+              name="temp"
+              id="temp"
+              placeholder="Enter Temperature"
+            />
+            <select name="temp_diff" id="temp_diff">
+              <option value="">--Temperature Unit--</option>
+              <option value="C">&deg;Celsius</option>
+              <option value="F">&deg;Fahrenheit</option>
+            </select>
+            <input type="submit" name="temp" id="submit" />
+            <br />
+            <span id="answer"></span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
